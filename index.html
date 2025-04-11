@@ -94,6 +94,37 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
+
+                /* Custom Computer Section */
+        #custom-computer {
+            background-color: white;
+            position: relative;
+        }
+        
+        #custom-computer h2 {
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        #custom-computer h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        #custom-computer img {
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        #custom-computer img:hover {
+            transform: scale(1.02);
+        }
         
         /* Section Styling */
         section {
@@ -637,6 +668,9 @@
                         <a class="nav-link" href="#expertise">Expertise</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link" href="#custom-computer">My Computer</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
@@ -687,6 +721,23 @@
                         <p>I am an accomplished security professional with a Master of Science in Information Security from Carnegie Mellon University and a track record of success at Microsoft. As a Security Software Engineer, I identified and engineered over 30 security controls for Azure DevOps, conducted red team operations resulting in complete infrastructure compromise, and led initiatives that reduced security risks by 90%.</p>
                         <p>My expertise combines offensive and defensive security capabilities, allowing me to think like an attacker while building robust security solutions. I specialize in <span class="highlight">threat modeling</span>, <span class="highlight">penetration testing</span>, <span class="highlight">reverse engineering</span>, and <span class="highlight">security architecture</span> across cloud environments and DevOps pipelines.</p>
                         <p>I am particularly passionate about innovative security solutions. With a perfect 4.0 GPA at CMU and experience speaking at industry events like MSRC BlueHat, I bring a unique blend of academic excellence and practical expertise to tackle today's most critical security challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Computer Section -->
+    <section id="custom-computer" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="computer.jpg" alt="Custom Built Computer" class="img-fluid rounded shadow" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2 class="mb-4">Meet My Custom-Built Computer</h2>
+                        <p class="lead">As a security professional who understands hardware and software from the ground up, I built this fully functioning computer from a 6502 microprocessor.</p>
                     </div>
                 </div>
             </div>
@@ -783,7 +834,7 @@
                     <li><strong>Vulnerability Research:</strong> Discovered and reported 25+ high-severity security bugs in Azure DevOps and Azure services through methodical security analysis, preventing potential exploits.</li>
                     <li><strong>Security Software Mentorship:</strong> Mentored junior security software engineers, including developing a comprehensive training on creating and deploying honeypots in Azure DevOps with C2 infrastructure.</li>
                     <li><strong>Risk Reduction:</strong> Architected and led implementation of an enterprise-wide security logging solution that reduced security risks in DevOps by 90%.</li>
-                    <li><strong>Security Tooling:</strong> Designed an innovative graph-based model for ADO security and developed Neo4j queries to ingest 20+ classes of ADO nodes in a BloodHound-like security tool now used by Microsoft's security teams.</li>
+                    <li><strong>Security Tooling:</strong> Designed an innovative graph-based model (BloodHound like) for ADO security and developed Neo4j queries to ingest 20+ classes of ADO nodes in a BloodHound-like security tool now used by Microsoft's security teams.</li>
                 </ul>
             </div>
             
